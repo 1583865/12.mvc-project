@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="bg"></div>
+	<div id="header"></div>
+	<div id="portfolio"></div>
+	<script type="text/javascript" src="sea.js"></script>
+	<script type="text/javascript" src="./js/seajs-css.js"></script>
+	<script type="text/javascript" src="./js/seajs-preload.js"></script>
+	<script type="text/javascript">
+		seajs.config({
+			preload: ["./js/MVC", "./js/jquery"]
+		});
+		seajs.use("./modules/portfolio_main", function() {
+			console.log("加载完毕")
+			MVC.install();
+		});
+	</script>
+</body>
+</html>

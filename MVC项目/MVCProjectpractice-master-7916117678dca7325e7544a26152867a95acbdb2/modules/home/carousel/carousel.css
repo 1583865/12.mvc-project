@@ -1,0 +1,70 @@
+#carousel {
+
+}
+#carousel .container {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #fffd;
+}
+#carousel .container .carousel {
+	position: relative;
+	padding-top: 30px; 
+	margin-left: 30px;
+	height: 400px;
+}
+#carousel .container .carousel li {
+	position: absolute;
+}
+#carousel .container .carousel li p {
+	position: absolute;
+	left: 10px;
+	bottom: 12px;
+	padding: 6px 10px;
+	background-color: #fffa;
+	font-size: 12px;
+}
+#carousel .container .cirs {
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#carousel .container .cirs li {
+	width: 12px;
+	height: 12px;
+	background-image: url(/images/navs.png);
+	border-radius: 50%;
+	margin-right: 5px;
+}
+#carousel .container .cirs li.active {
+	background-position: 0 -12px;
+}
+#carousel .container .cirs li:hover {
+	background-position: 0 -12px;
+}
+#carousel .container .cirs #leftBtn {
+	width: 25px;
+	height: 25px;
+	background-image: url(/images/arrows.png);
+	background-position: 0 0;
+}
+#leftBtn:hover {
+	background-position-y: -25px;
+}
+#carousel .container .cirs #rightBtn {
+	width: 25px;
+	height: 25px;
+	background-image: url(/images/arrows.png);
+	background-position: -25px 0;
+}
+#rightBtn:hover {
+	background-position-y: -25px;
+}
+#carousel .container .title {
+	font-size: 20px;
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	color: gray;
+	line-height: 2;
+}
